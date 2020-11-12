@@ -14,6 +14,9 @@ class wxmView : public wxFrame {
 public:
     wxmView();
     virtual ~wxmView();
+    wxButton* m_btn1 = nullptr;
+    wxTextCtrl* m_text1 = nullptr;
+    wxListBox* m_list1 = nullptr;
     //Text for displaying time
     wxStaticText* time = nullptr;
     wxStaticText* temp = nullptr;
@@ -23,6 +26,7 @@ public:
     void OnTimer(wxTimerEvent& event);
     void OnPaint(wxPaintEvent& event);
     void GetWeather();
+    void OnButtonClicked(wxCommandEvent& event);
 
 protected:
 

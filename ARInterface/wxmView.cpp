@@ -36,6 +36,7 @@ wxGridSizer* layout = new wxGridSizer(3, 3, 10, 10);
 enum {
     ID_VALUE_WINDOW = 80091,
     ID_VALUE_TIMER = 10001,
+    ID_VALUE_BUTTON = 61232,
 
 };
 
@@ -66,9 +67,24 @@ wxmView::wxmView()
     //Set font of text
     time->SetFont(myFont);
 
+    m_btn1 = new wxButton(this, ID_VALUE_BUTTON, "Send", wxPoint(10, 10), wxSize(150, 50));
+    m_text1 = new wxTextCtrl(this, wxID_ANY, "", wxPoint(10, 70), wxSize(300, 30));
+    m_list1 = new wxListBox(this, wxID_ANY, wxPoint(10, 110), wxSize(300, 300));
+
+
     GetWeather();
 
     layout->Add(time,0,wxEXPAND);
+    layout->AddSpacer(0);
+    layout->Add(m_btn1,0,wxALIGN_BOTTOM);
+    layout->AddSpacer(0);
+    layout->AddSpacer(0);
+    layout->Add(m_text1, 0, wxALIGN_TOP);
+    layout->AddSpacer(0);
+    layout->AddSpacer(0);
+    layout->Add(m_list1, 0, wxALIGN_TOP);
+
+
 
     SetSizer(layout);
 
@@ -127,6 +143,11 @@ void wxmView::GetWeather() {
     
 }
 
+void wxmView::OnButtonClicked(wxCommandEvent& event) {
+    m_list1->AppendString(m_text1->GetValue());
+    event.Skip();
+}
+
 //Destructor
 wxmView::~wxmView() {}
 
@@ -135,4 +156,5 @@ BEGIN_EVENT_TABLE(wxmView, wxFrame)
 //Listen for timer event and run OnTimer function
 EVT_TIMER(ID_VALUE_TIMER, wxmView::OnTimer)
 EVT_PAINT(wxmView::OnPaint)
+EVT_BUTTON(ID_VALUE_BUTTON, OnButtonClicked)
 wxEND_EVENT_TABLE()
