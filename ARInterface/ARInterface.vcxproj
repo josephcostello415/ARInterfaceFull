@@ -28,22 +28,22 @@
     <ClInclude Include="wxmView.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="G:\Downloads\WeatherIcons-20201111T215307Z-001\cloudy.png" />
-    <Image Include="G:\Downloads\WeatherIcons-20201111T215307Z-001\night.png" />
-    <Image Include="G:\Downloads\WeatherIcons-20201111T215307Z-001\partlycloudyday.png" />
-    <Image Include="G:\Downloads\WeatherIcons-20201111T215307Z-001\partlycloudynight.png" />
-    <Image Include="G:\Downloads\WeatherIcons-20201111T215307Z-001\rain.png" />
-    <Image Include="G:\Downloads\WeatherIcons-20201111T215307Z-001\snow.png" />
-    <Image Include="G:\Downloads\WeatherIcons-20201111T215307Z-001\sunny.png" />
-    <Image Include="G:\Downloads\WeatherIcons-20201111T215307Z-001\thunderstorm.png" />
-    <Image Include="G:\Downloads\WeatherIcons-20201111T215307Z-001\windy.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="weather.html" />
     <None Include="weather.py" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="weather.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="cloudy.png" />
+    <Image Include="night.png" />
+    <Image Include="partlycloudyday.png" />
+    <Image Include="partlycloudynight.png" />
+    <Image Include="rain.png" />
+    <Image Include="snow.png" />
+    <Image Include="sunny.png" />
+    <Image Include="thunderstorm.png" />
+    <Image Include="windy.png" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

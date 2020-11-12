@@ -29,7 +29,7 @@
 #define frameWidth 800
 #define frameHeight 800
 
-CONST std::string ICONPATH = "G:/Downloads/WeatherIcons-20201111T215307Z-001/";
+//CONST std::string ICONPATH = "G:/Downloads/WeatherIcons-20201111T215307Z-001/";
 
 wxGridSizer* layout = new wxGridSizer(3, 3, 10, 10);
 
@@ -96,7 +96,7 @@ void wxmView::OnPaint(wxPaintEvent& event) {
 
     std::string iconname = "rain.png";
 
-    wxImage image(ICONPATH+iconname);
+    wxImage image(iconname);
 
     wxBitmap bmp(image);
 

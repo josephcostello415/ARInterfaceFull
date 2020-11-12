@@ -34,35 +34,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="G:\Downloads\WeatherIcons-20201111T215307Z-001\cloudy.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="G:\Downloads\WeatherIcons-20201111T215307Z-001\night.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="G:\Downloads\WeatherIcons-20201111T215307Z-001\partlycloudyday.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="G:\Downloads\WeatherIcons-20201111T215307Z-001\partlycloudynight.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="G:\Downloads\WeatherIcons-20201111T215307Z-001\rain.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="G:\Downloads\WeatherIcons-20201111T215307Z-001\snow.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="G:\Downloads\WeatherIcons-20201111T215307Z-001\sunny.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="G:\Downloads\WeatherIcons-20201111T215307Z-001\thunderstorm.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="G:\Downloads\WeatherIcons-20201111T215307Z-001\windy.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="weather.py">
       <Filter>Resource Files</Filter>
     </None>
@@ -74,5 +45,34 @@
     <Text Include="weather.txt">
       <Filter>Resource Files</Filter>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="cloudy.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="night.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="partlycloudyday.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="partlycloudynight.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="rain.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="snow.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="sunny.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="thunderstorm.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="windy.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>
